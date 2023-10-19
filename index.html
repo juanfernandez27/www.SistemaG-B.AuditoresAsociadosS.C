@@ -1,28 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">   <!-- Definiendo el lenguajre en español-->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- pagina web responsive, adaptativo a cualquier dispositivo-->
+
+    <title>Sistema G&B S.C.</title>
+    <!-- Referenciando al CSS descargado de Bootstrap-->
     <link href="public/CSS/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Jquery-->
+    <script src="public/js/jquery-3.7.1.min.js"></script>
 </head>
+
+<!-- MENU DE NAVEGACION -- utilizacion de navbar de bootstrap-->
+
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-white" > <!-- color de cuadro del menu-->
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" > <!-- style="color:#ffffff" color de letra blanca en el menu-->
+            <!-- imagen y texto para menu-->
+            <img src="public/images/logo_GYB-transformed.jpg"
+                 alt="Logo" width="80" height="50" class="d-inline-block align-text-top">
+            <!-- nombre de la opcion pero ahora no lo usaremos-->
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link  btn btn-outline-info" aria-current="page" href="#"> <i class="bi bi-house-fill"></i> Home</a> <!-- btn btn-outline-info cambia de color al boton-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link btn btn-outline-info" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
                     </a>
                     <ul class="dropdown-menu">
@@ -33,7 +47,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link btn btn-outline-info" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -43,6 +57,108 @@
         </div>
     </div>
 </nav>
+<!-- SECCION DE CARRUSEL DE IMAGENES CON INFORMACION-->
+
+<section>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/fotos-premium/iconos-auditoria-pantalla-virtual_218381-12203.jpg?w=1380" height="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="" class="btn btn-outline-info btn-lg">Mas Información</a>  <!-- botones de mas info y contratar servicio-->
+                    <a href="" class="btn btn-info btn-lg">Contratar Servicio</a> <br><br>
+                    <h5>EVALUACION DE ESTADOS FINANCIEROS Y EXAMENES ESPECIALES</h5>
+                    <p>Servicios a prestar en las empresas, cooperativas, financieras y entidades públicas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2021/12/30/19/46/audit-6904474_1280.png" height="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>AUDITORIA INTERNA</h5>
+                    <p>Este servicio se orienta ser sustitutorio de la función de Auditoría Interna en los casos que
+                        los clientes carecen de esta función</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/03/08/16/31/audit-3209053_1280.jpg" height="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>AUDITORIA TRIBUTARIA</h5>
+                    <p>SEste servicio comprende un examen independiente para verificar si la entidad cumple con
+                        registrar y pagar las obligaciones tributarias</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://redtiseg.com/wp-content/uploads/2023/05/Auditoria-de-sistemas.png" height="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>AUDITORIAS DE SISTEMAS</h5>
+                    <p>Este servicio se orienta ser sustitutorio de la función de Auditoría Interna </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2015/01/28/22/20/bookkeeping-615384_1280.jpg" height="500px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>AUDITORIA OPERATIVA DE GESTION </h5>
+                    <p>La Auditoría Operativa de Gestión es orientada a evaluar áreas y/o actividades de la entidad</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- SECCION DE Contenedor de informaciones de la empresa-->
+<style>
+    .info {
+        background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12"> <!-- Se acomoda al tamaño del dispositivo-->
+                <center>
+                    <br><br><br> <!-- espacio entre el carrusel y las infos-->
+                    <img src="https://img.freepik.com/foto-gratis/manos-escribiendo-documentos-comerciales-concepto-escritorio_53876-146452.jpg?w=826&t=st=1697673489~exp=1697674089~hmac=b398c9279f8b7df2f6aff3e11c698d50ebe9e1c09d183e2ac9337ba6ebef0566" width="80%" alt="">
+                </center>
+            </div>
+            <div class="col-md-6 col-sm-12"> <!-- Se acomoda al tamaño del dispositivo-->
+                <br><br><br>
+                <h1>ACERCA DE NUESTRA <spna style="color: #e10a1f">SOCIEDAD</spna></h1>
+                <br>
+                <p style="text-align: justify">
+                    GUZMAN & BEINGOLEA AUDITORES ASOCIADOS S.C., es una sociedad de auditoría constituida el 31 de mayo de 1994,
+                    inscrita en el Asiento a-1, Ficha Nº 006 del Registro de Personas Jurídicas de Ayacucho,
+                    conformado por los socios fundadores, como primer Gerente al CPC. Luis Beltrán Guzmán Zorrilla y
+                    Administradora al CPC. Julia Saturnina Beingolea Córdova y Socio principal Ing. Víctor Rómulo Beingolea Córdova;
+                    una sociedad con el objeto de brindar los servicios de auditoría, tributación, consultoría y asesoramiento financiero
+                    a clientes como empresas e instituciones públicas.
+
+                    Nuestra oficina principal está ubicada en la ciudad de Ayacucho.
+
+                </p>
+                <a href=""class="btn btn-outline-primary btn-lg">Más sobre nosotros</a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
