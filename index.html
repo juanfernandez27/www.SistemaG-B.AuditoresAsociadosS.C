@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- pagina web responsive, adaptativo a cualquier dispositivo-->
 
     <title>Sistema G&B S.C.</title>
+
     <!-- Referenciando al CSS descargado de Bootstrap-->
     <link href="public/CSS/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Iconos de bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!-- Jquery-->
     <script src="public/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Styles CSS-->
+    <link rel="stylesheet" href="public/CSS/style.css">
+
 </head>
 
 <!-- MENU DE NAVEGACION -- utilizacion de navbar de bootstrap-->
@@ -120,25 +127,19 @@
     </div>
 </section>
 
-<!-- SECCION DE Contenedor de informaciones de la empresa-->
-<style>
-    .info {
-        background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
-        background-size: 100vw 100vh;
-        background-repeat: no-repeat;
-    }
-</style>
+<!-- SECCION DE Contenedor de informaciones de la empresa,
+@media hace que la pagina web se adapte y no pierda la forma del fondo transparente-->
 
 <section class="info">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12"> <!-- Se acomoda al tamaño del dispositivo-->
+            <div class="col-md-6 col-sm-12 zoomP" > <!-- Se acomoda al tamaño del dispositivo-->
                 <center>
                     <br><br><br> <!-- espacio entre el carrusel y las infos-->
                     <img src="https://img.freepik.com/foto-gratis/manos-escribiendo-documentos-comerciales-concepto-escritorio_53876-146452.jpg?w=826&t=st=1697673489~exp=1697674089~hmac=b398c9279f8b7df2f6aff3e11c698d50ebe9e1c09d183e2ac9337ba6ebef0566" width="80%" alt="">
                 </center>
             </div>
-            <div class="col-md-6 col-sm-12"> <!-- Se acomoda al tamaño del dispositivo-->
+            <div class="col-md-6 col-sm-12 zoomP"> <!-- Se acomoda al tamaño del dispositivo-->
                 <br><br><br>
                 <h1>ACERCA DE NUESTRA <spna style="color: #e10a1f">SOCIEDAD</spna></h1>
                 <br>
@@ -160,6 +161,346 @@
     </div>
 </section>
 
+<!-- SECCION DE OTROS SERVICIOS USANDO CONTENEDOR Y CARDS-->
+
+<section class="our-services">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">
+                <br><br>
+                <h1>NUESTROS <b style="color: blue">SERVICIOS</b></h1>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 zoomP">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/empresarios-elegantes-trajes-reunion-negocios-discutiendo-nuevo-proyecto-oficina_181624-47022.jpg?w=1380&t=st=1697758121~exp=1697758721~hmac=cc67714bd489e8b5ca41234602bea37f21c217376fe4fef99f40b502f7eb2dda"
+                         height="220px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"style="text-align: center">CONSULTORIA DE GERENCIA Y DESARROLLO EMPRESARIAL</h5>
+                        <p class="card-text" style="text-align: justify">Comprende los servicios de elaboración de planeamiento estratégico; evaluación y  diseño de los
+                            sistemas de información; diagnostico empresarial y demas.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-3 zoomP">
+                <div class="card">
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-bufete-abogados_114360-8586.jpg?w=1380&t=st=1697758649~exp=1697759249~hmac=16269164842a32effa4f53f2476f0be41283508550a6e174ed646e28dd6e3e88"
+                         height="220px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center">EVALUACION ECONÓMICA – FINANCIERO DE PROYECTOS Y OTROS</h5>
+                        <p class="card-text" style="text-align: justify" >El servicio comprende la evaluación de proyectos de inversión, evaluación financiera – económica y
+                            valorización y asesoría financiera en los procesos de fusión.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-3 zoomP">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/ceo-afroamericano-dando-presentacion-concepto-reunion-equipo-corporativo_1163-4880.jpg?w=1380&t=st=1697758653~exp=1697759253~hmac=86d824b296b6a3969cab97c08e7c2e1cf5c0c714964f5e8c84f4d740983fc642"
+                         height="220px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center">SERVICIOS CONTABLES</h5>
+                        <p class="card-text" style="text-align: justify" >Comprende los servicios de: Identificación de operaciones;
+                            Formulación de Plan de Cuentas y Manuales de Riesgos y Reglamentos;
+                            Implementación de registros y documentos contables; Determinación
+                            de reportes contables.
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-md-3 zoomP">
+                <div class="card">
+                    <img src="https://img.freepik.com/foto-gratis/hombre-negocios-mostrando-cambios-informe_1098-3504.jpg?w=1380&t=st=1697762873~exp=1697763473~hmac=c5d6064274c496ccfff5d8de580d47e4a06becff64fda7151022350da9486150"
+                         height="220px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center">CONSULTORIA EN RECURSOS HUMANOS</h5>
+                        <p class="card-text" style="text-align: justify" >El servicio comprende las actividades siguientes: Selección, reclutamiento y evaluación de personal, en base al perfil solicitado por el
+                            cliente para todos los niveles de la organización  profesionales, técnicos, etc.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<br>
+
+<!-- SECCION DE GALERIA DE IMAGENES-->
+
+<section class="gallery">
+    <div class="container">
+        <br><br>
+        <h1>NUESTRA <b style="color: blue">GALERIA</b></h1>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4 zoomP">
+                <center>
+                    <img src="public/images/logo_GYB-transformed.jpg"
+                         width="100%" alt="">
+                    <br><br>
+                </center>
+            </div>
+            <div class="col-md-8 zoomP">
+                <center>
+                    <img src="https://img.freepik.com/vector-gratis/plantilla-contabilidad-dibujada-mano_23-2150278738.jpg?w=1800&t=st=1697766774~exp=1697767374~hmac=e3d0b4a6242e442ec5c1eb5806f90be25bad86a4cabda90f7cedd900e76a7a74"
+                         width="100%" height="260px" alt="">
+                    <br><br>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 zoomP">
+                <center>
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-auditoria_114360-6727.jpg?w=826&t=st=1697766759~exp=1697767359~hmac=50fcb2166dd8b3d73bfe383f1934952a217aac7e7e87181f9c3f1ac550e247fa"
+                         width="100%" height="260px" alt="">
+                    <br><br>
+                </center>
+            </div>
+            <div class="col-md-4 zoomP">
+                <center>
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-grafico-analisis-datos_53876-18129.jpg?w=1380&t=st=1697766749~exp=1697767349~hmac=8a1dcd150f15222087aaff1547eaad9c325a9e8ae8572a6579944ff830725e44"
+                         width="100%" height="260px" alt="">
+                    <br><br>
+                </center>
+            </div>
+            <div class="col-md-4 zoomP">
+                <center>
+                    <img src="https://img.freepik.com/vector-gratis/analisis-rendimiento-empresarial-graficos_53876-66260.jpg?w=1380&t=st=1697766776~exp=1697767376~hmac=b7fd0c263dade2f7e65946b60fe1f1761231f7794f4813f47673ea111b5cdbcb"
+                         width="100%" height="260px" alt="">
+                    <br><br>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</section>
+
+<!-- SECCION DE TESTIMONIO DE CLIENTES-->
+
+<section class="clients">
+    <div class="container">
+        <br><br>
+        <h1 style="text-align: center">
+            TESTIMONIO DE NUESTROS CLIENTES
+        </h1> <br><br>
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/C5603AQFJB56WtK41AA/profile-displayphoto-shrink_800_800/0/1646149489984?e=1703116800&v=beta&t=tQsnuA_-b-kGKrY03MqUB_eG-l9yEmnTVYaWEGgC3b0"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Elizabhet Jobana Valdez Gonzalez/
+                                            linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/D4E03AQHeetpS1hvdzQ/profile-displayphoto-shrink_800_800/0/1674000303743?e=1703116800&v=beta&t=Efu0VKMNP1OHBkxJtQIBMhOILzKT_UJQXfNDumAubBY"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Marko Nannel Mendoza Pimentel/
+                                            linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://scontent.fayp1-1.fna.fbcdn.net/v/t39.30808-6/300750525_465490615589479_5536850970618144347_n.png?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFmTqqJm9WF1XQoQJ02BRGOimG2PH7oRN2KYbY8fuhE3VPJMxLsir_hEqrKl4KUaQrza203gstBk-9ibphTD_Dn&_nc_ohc=alGYVT6xhqsAX-e7BXu&_nc_ht=scontent.fayp1-1.fna&oh=00_AfBhD5ZzizwOLyJx0SLuoZanMdBbtM65rCps_o5WYB5Y8g&oe=6537387F"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Cooperativa de Ahorro y Credito Señor de Quinuapata</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://scontent.fayp1-1.fna.fbcdn.net/v/t39.30808-6/347136335_207908285369742_6043809217161467418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHsB79CZnPrfu-bzA8FuuW34kKS8VQ0ffPiQpLxVDR981KPrW5jj7lz4Fm3igM7l6wOseqYygzc0sMdtmmHnikt&_nc_ohc=qqQJqSBQKvwAX-VzdHG&_nc_ht=scontent.fayp1-1.fna&oh=00_AfDyJxfQdxgcc-7nmcHnKub_TondT8KsSrZIrzOncarKUQ&oe=6537373F"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Cooperativa de Ahorro y Credito Señor de Maynay</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQEpSnCTSFEFtw/profile-displayphoto-shrink_800_800/0/1637807466463?e=1703116800&v=beta&t=q7LyNfFflmSakTfAdUzbYXq5aIi5qDDtAHTgfvNGVKg"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Khevin Erickson Andre Lizano Borrero
+                                            /linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQH_yiNfRmkfzA/profile-displayphoto-shrink_800_800/0/1663969442725?e=1703116800&v=beta&t=iympaxyhJuYWT2TNKt5cPLQ9ud9NECS62yrPGBQNlcw"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Heidy Rosa Rodriguez Rodriguez
+                                            /linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQHgIc9I29U-Mg/profile-displayphoto-shrink_800_800/0/1579207635997?e=1703116800&v=beta&t=fVXzNP9lThNZA1Ngzpn7K9NHzFAqbfEfWqwmPS2B3Oc"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@juan carlos baca castro/linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="https://media.licdn.com/dms/image/C4D03AQFRs-Mi2LVxlA/profile-displayphoto-shrink_800_800/0/1517285187606?e=1703116800&v=beta&t=dfytNwcXbrcEEX6rVa2N2Cbmc8NlYG9XNZTjthbXXw4"
+                                         height="220px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center">@Meliza Quenaya/linkedin.com</h5>
+                                        <p class="card-text" style="text-align: justify" >Excelente servicio , puntual y detallado , cumple con todas las normas de la S.B.S.,
+                                            la Auditoria Operativa de Gestion quedó perfecto, recomiendo a otras entidades financieras confiar en los servicios que brinda G&B Auditores
+                                            Asociados S.C.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION DE Ubicacion del Negocio-->
+
+<section class="map">
+    <div class="container">
+        <br><br><h1 style="text-align: center">Nuestra Ubicacion : </h1><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d686.794807157462!2d-74.22213576528395!3d-13.156210240026308!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1697777847999!5m2!1ses-419!2spe"
+                width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <br><br>
+
+</section>
+
+<!-- SECCION DE Contactos-->
+<section class="contactos">
+    <div class="container">
+        <br><br><h1 style="text-align: center">Contáctanos:</h1><br><br>
+        <div class="row">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <center><b>Escribenos aqui</b></center>
+                        </div>
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label for=""><b>Nombre</b></label><br>
+                                    <input type="text" class="form-control" placeholder="escribe tu nombre..."  >
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for=""><b>Correo electrónico</b></label><br>
+                                    <input type="email" class="form-control" placeholder="escribe tu correo electrónico..."  >
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for=""><b>Mensaje</b></label><br>
+                                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                </div>
+                                <hr>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br><br>
+    </div>
+
+
+
+</section>
+
+
+<br><br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

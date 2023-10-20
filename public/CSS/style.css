@@ -1,0 +1,43 @@
+.info {
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .info{
+        background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
+    }
+
+}
+
+.gallery{
+    background-color: #5e2c2c;
+}
+
+.zoomP{
+/* aumentamos la anchura y la altura durante 2 segundos */
+    transition: width 1.1s,height 1.1s, transform 1.1s;
+    -moz-transition: width 1.1s,height 1.1s, -moz-transform 1.1s;
+    -webkit-transition: width 1.1s, height 1.1s, -webkit-transform 1.1s;
+    -o-transition: width 1.1s, height 1.1s, -o-transform 1.1s;
+   /* border: 1px solid #c0c0c0;
+    box-shadow: #c0c0c0 0px 5px 5px 0px;*/
+}
+
+.zoomP:hover{
+    /*transformamos el elemento al pasar el mouse por encima al doble
+    de su tamaño con scale(2).*/
+    transform: scale(1.05); /*(150% de zoom - Note:
+    if the zoom is too large, it will go outside of the viewport)*/
+   -webkit-transform: scale(1.05); transform: scale(1.05) ;
+
+}
+.map{
+    background-color: #76bad9;
+}
+.contactos{
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
