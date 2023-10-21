@@ -12,7 +12,7 @@
 }
 
 .gallery{
-    background-color: #5e2c2c;
+    background-color: #ecb1b1;
 }
 
 .zoomP{
@@ -34,10 +34,15 @@
 
 }
 .map{
-    background-color: #76bad9;
+    background-color: #eabcbc;
 }
 .contactos{
     background-image: url("https://img.freepik.com/vector-gratis/fondo-escritorio-abstracto-vector-diseno-geometrico-blanco_53876-140225.jpg?w=1380&t=st=1697678052~exp=1697678652~hmac=5d5561bbd027b6a3383beec4432a305445dbadad2eaebe62b828468ed97a7de9");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+}
+
+.footer1{
+    background-color: #04389b;
+    color: #ffffff;
 }
